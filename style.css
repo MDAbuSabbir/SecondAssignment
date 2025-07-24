@@ -328,3 +328,143 @@ nav ul li a{
         font-size: 1rem;
     }
 }
+
+/* Join the colorful bunch design starts from here */
+
+
+.colourfull-Bunch{
+    width: 100%;
+    background-image: url("./Assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 10rem auto 10rem auto; */
+}
+
+.colourfull-Bunch-container{
+    /* width: 52rem; */
+    padding: 10rem 0 10rem 0; 
+
+}
+.join-title{
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    /* margin-top: 10rem; */
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 51.875rem;
+    margin: 0 auto;
+
+}
+.colourfull-Bunch input{
+    padding: 1rem 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+input:nth-child(1){
+    /* flex: 3 3; */
+    color: rgba(0, 0, 0, 0.5);
+    width: 75%;
+    max-width: 77.59036145%;
+
+}
+input:nth-child(2){
+    /* flex: 1 1; */
+    background-color: #E95A08;
+    color: white;
+    width: 25%;
+    max-width: 11.625rem;
+}
+
+@media screen and (max-width:576px) {
+    .join-title{
+        font-size: 1.25rem;
+    }
+    .colourfull-Bunch-container{
+        padding: 7rem 0 5rem 0;
+    }
+    .colourfull-Bunch{
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .subscription-inputs{
+        max-width: 90% ;
+    }
+    .inputs{
+        width: 96%;
+    }
+    input:nth-child(1){
+       width: 60%; 
+    }
+    input:nth-child(2){
+        width: 40%;
+    }
+
+}
+
+/* Footer styles starts from here */
+
+footer{
+    width: 100%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 3.2rem 1rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.footer-description{
+    width: 22.5rem;
+}
+.footer-description img{
+    width: 8.4375rem;
+    height: 5.125rem;
+}
+.footer-description figure:nth-child(1){
+    margin-bottom: 1rem;
+}
+.useful-links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.useful-links ul li{
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+.useful-links ul li a{
+    color: #6B7280;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.social-media figure{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.social-media figure img{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.social-media figure img:nth-child(2){
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:576px) {
+    footer{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
