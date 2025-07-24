@@ -26,6 +26,7 @@ p{
     font-weight: 700;
     font-size: 3.125rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .orange{
     color: #E95A08;
@@ -171,6 +172,8 @@ nav ul li a{
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
 /* Flower & Plants Lover secftion design starts form here */
 
 .Flower-Plants-lover{
@@ -224,5 +227,104 @@ nav ul li a{
 }
     .content-container{
     width: 100%;
+    }
+}
+
+/* Lates Deals section design starts from here */
+
+.lates-deals{
+    margin: 8rem auto 5rem auto;
+}
+.offers-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+}
+
+.bloom-plant{
+    background-image: url("./Assets/Rectangle5.png"),url("./Assets/deal-bloom.png");
+    border-radius: 0.87rem;
+    grid-row: 1;
+    background-position: center,center;
+    background-repeat: no-repeat , no-repeat;
+    background-size:cover,cover ;
+}
+.ana-plant{
+    background-image: url("./Assets/Rectangle5.png"), url("./Assets/deal-ana.png");
+    border-radius: 0.87rem;
+    grid-row: 2;
+    background-position: center,center;
+    background-repeat: no-repeat , no-repeat;
+    background-size:cover,cover ;
+}
+.zabo-plant{
+    background-image: url("./Assets/Rectangle5.png"),url("./Assets/deal-zabo.png");
+    border-radius: 1.2rem;
+    grid-column: 2/span 3;
+    grid-row: 1/span 2;
+    background-position: center,center;
+    background-repeat: no-repeat , no-repeat;
+    background-size:cover,cover ;
+}
+.bloom-plant,.ana-plant,.zabo-plant{
+    text-align: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bloom-plant h3, .ana-plant h3{
+    font-size: 1.25rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+}
+.bloom-plant a, .ana-plant a{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+.zabo-plant h3{
+    font-size: 2.5rem;
+}
+.zabo-plant a{
+    font-size: 1.75rem;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+    .lates-deals .section-header-title{
+        font-size: 1.5rem;
+    }
+    .lates-deals .section-header p{
+        font-size: 0.87rem;
+        width: 90%;
+    }
+    .offers-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .bloom-plant{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .ana-plant{
+        grid-column: 1;
+        grid-row: 2;    
+    }
+    .zabo-plant{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .zabo-plant h3{
+       font-size: 1.25rem; 
+    }
+    .zabo-plant a{
+        font-size: 1rem;
     }
 }
