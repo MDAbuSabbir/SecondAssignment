@@ -255,25 +255,45 @@ nav ul li a{
     background-size:cover ;
 }
 .bloom-plant{
-    background-image: url("./Assets/deal-bloom.png");
+    background-image: url("./Assets/Rectangle5.png"), url("./Assets/deal-bloom.png");
     border-radius: 0.87rem;
     grid-row: 1;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size:cover , cover;
 }
 .ana-plant{
-    background-image: url("./Assets/deal-ana.png");
+    background-image: url("./Assets/Rectangle5.png"), url("./Assets/deal-ana.png");
     border-radius: 0.87rem;
     grid-row: 2;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size:cover , cover;
 }
 .zabo-plant{
-    background-image: url("./Assets/deal-zabo.png");
+    background-image: url("./Assets/Rectangle5.png"), url("./Assets/deal-zabo.png");
     border-radius: 1.2rem;
     grid-column: 2/span 3;
     grid-row: 1/span 2;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size:cover , cover;
+}
+.bloom-plant,.ana-plant,.zabo-plant{
+    text-align: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .bloom-plant h3, .ana-plant h3{
     font-size: 1.25rem;
     font-family: "Noto Serif", serif;
     font-weight: 700;
+    
 }
 .bloom-plant a, .ana-plant a{
     font-family: "Inter", sans-serif;
@@ -325,6 +345,7 @@ nav ul li a{
 
 
 .colourfull-Bunch{
+    overflow: hidden;
     width: 100%;
     background-image: url("./Assets/news-letter-bg.png");
     background-size: cover;
@@ -458,5 +479,8 @@ footer{
     footer{
         flex-direction: column;
         gap: 1.25rem;
+    }
+    .footer-description{
+    width: 100%;
     }
 }
